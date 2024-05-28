@@ -1,0 +1,569 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  
+  <!-- css native -->
+  <link rel="stylesheet" href="native.css">
+
+  <!-- aos animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- boxicons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.0/css/boxicons.min.css">
+
+  <!-- icon title browser -->
+  <link rel="icon" href="/image/letter-f.png" type="image/png">
+
+  <!-- title browser -->
+  <title>fiksdev.</title>
+
+  <!-- /font style/ -->
+  <!-- poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- owel corsel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+
+<!-- body -->
+
+<body class="bg-gelap">
+  <!-- navbar -->
+  <div class="container mx-auto py-4">
+    <nav class="flex justify-between items-center max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- gambar logo website -->
+      <div>
+        <h1 class="font-poppins text-putih font-extrabold text-3xl">fiksdev<span
+            class="text-unggu font-bold text-5xl">.</span></h1>
+      </div>
+      <!-- sub menu navbar -->
+      <ul class="font-poppins text-putih text-base font-medium lg:flex gap-6 hidden">
+        <li class="cursor-pointer hover:font-bold hover:text-unggu hover:scale-125 hover:border-b-2"><a
+            href="#">Home</a>
+        </li>
+        <li class="cursor-pointer hover:font-bold hover:text-unggu hover:scale-125 hover:border-b-2"><a
+            href="#">About</a>
+        </li>
+        <li class="cursor-pointer hover:font-bold hover:text-unggu hover:scale-125 hover:border-b-2"><a
+            href="#">Service</a>
+        </li>
+        <li class="cursor-pointer hover:font-bold hover:text-unggu hover:scale-125 hover:border-b-2"><a
+            href="#">Blog</a>
+        </li>
+        <!-- dropdown button -->
+        <button id="dropdownNavbarLink" data-dropdown-toggle="dropdownNavbar" class="font-poppins text-white flex items-center justify-between w-full py-2 px-3 rounded hover:bg-gray-100 
+          md:hover:bg-transparent md:border-0 hover:hover:text-unggu md:p-0 md:w-auto hover:font-bold 
+          hover:scale-125">Project
+          <svg class="w-2.5 h-2.5 ms-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+            viewBox="0 0 10 6">
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 4 4 4-4" />
+          </svg></button>
+        <!-- Dropdown menu -->
+        <div id="dropdownNavbar"
+          class="z-10 hidden font-medium bg-unggu rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-100 divide-y divide-gray-100 shadow w-44">
+          <ul class="py-2 text-sm text-putih" aria-labelledby="dropdownLargeButton">
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Mobile
+                App</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Website</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Chat
+                AI</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Product
+                Design</a>
+            </li>
+            <li>
+              <a href="#" class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Mockup
+                Design</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Landing Page</a>
+            </li>
+            <li>
+              <a href="#"
+                class="block px-4 py-2 hover:bg-unggu font-inter hover:font-semibold hover:text-center">Dasboard</a>
+            </li>
+          </ul>
+        </div>
+      </ul>
+      <!-- navbar end -->
+
+      <!-- button navbar -->
+      <div class="lg:flex gap-6 hidden">
+        <button class="text-putih font-poppins border border-unggu px-10 py-4 rounded-full 
+          font-bold text-xs hover:bg-graywhite hover:scale-90 focus:outline-none focus:ring-2 focus:ring-putih">
+          Contact Me
+        </button>
+        <button
+          class="font-poppins bg-unggu text-white font-bold text-xs px-10 py-4 
+          rounded-full hover:scale-90 hover:bg-ungutua active:bg-unggu focus:outline-none focus:ring-2 focus:ring-putih">
+          About Me
+        </button>
+      </div>
+      <!-- button navbar end -->
+
+      <!-- hamburger menu -->
+      <button class="lg:hidden tombolButton">
+        <img src="/image/menu (2).png" alt="menumobile">
+      </button>
+      <!-- hamburger menu end -->
+    </nav>
+    <!-- mobile ui -->
+    <div class="MobileMenu">
+      <ul
+        class="font-poppins bg-cover bg-center bg-fixed backdrop-blur-lg text-putih font-medium gap-8 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <li class="py-4 ease-in-out hover:bg-unggu hover:scale-90 hover:rounded-xl hover:text-center cursor-pointer">
+          <a href="#">Home</a>
+        </li>
+        <li class="py-4 ease-in-out hover:bg-unggu hover:scale-90 hover:rounded-xl hover:text-center cursor-pointer">
+          <a href="#">About</a>
+        </li>
+        <li class="py-4 ease-in-out hover:bg-unggu hover:scale-90 hover:rounded-xl hover:text-center cursor-pointer">
+          <a href="#">Service</a>
+        </li>
+        <li class="py-4 ease-in-out hover:bg-unggu hover:scale-90 hover:rounded-xl hover:text-center cursor-pointer">
+          <a href="#">Blog</a>
+        </li>
+        <li class="py-4 ease-in-out hover:bg-unggu hover:scale-90 hover:rounded-xl hover:text-center cursor-pointer">
+          <a href="#">Project</a>
+        </li>
+      </ul>
+      <!-- button navbar -->
+      <div class="flex gap-4 mt-4 bg-cover bg-center bg-fixed backdrop-blur-lg max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <button class="w-full text-putih font-poppins border border-unggu px-10 py-4 rounded-full 
+          font-bold text-xs hover:bg-graywhite hover:scale-90">
+          Contact Me
+        </button>
+        <button
+          class="w-full text-white font-poppins bg-unggu font-bold text-xs px-10 py-4 rounded-full hover:scale-90 hover:bg-ungutua">
+          About Me
+        </button>
+      </div>
+      <!-- button navbar end -->
+    </div>
+
+    <!-- mobile ui end -->
+  </div>
+  <!-- navbar end -->
+
+  <!-- hero -->
+  <section class="hero text-putih py-28">
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h4 class="text-5xl font-poppins font-bold lg:lading-[94px] lg:text-[40px] py-4"><span
+          class="text-unggu text-5xl">Hallo</span> I'm fiksdev.</span></h4>
+      <h1 class="text-4xl mt-3 font-inter font-medium text-putih lg:text-[84px] lg:lading-[94px] py-6"><span
+          id="typed"></span>
+      </h1>
+      <p class="text-gray-400 font-inter font-normal text-base w-full lg:w-3/6 mt-9">
+        Halo, perkenalkan, saya seorang pengembang blockchain yang bersemangat,
+        <span class="font-semibold text-putih">dengan keahlian dalam pengembangan frontend dan desain UI/UX.</span> Saya
+        senang
+        menggabungkan kreativitas dan teknologi untuk menciptakan solusi yang inovatif
+        dan menarik. Salam kenal dari saya <a href="https://www.instagram.com/fiksdev/"><span
+            class="underline font-bold text-gray-400 hover:text-putih">fiksdev.</span></a>
+      </p>
+      <div class="mt-14">
+        <div class="mt-13 flex items-center gap-6">
+          <a href="" class="btn-ungu bg-unggu font-poppins active:bg-unggu 
+          focus:outline-none focus:ring-2 focus:ring-putih font-bold text-white rounded-full 
+          px-10 py-4 hover:scale-90">My Project
+          </a>
+          <a href="#" class="flex item center text-gray-400 font-poppins font-bold text-lg hover:scale-90">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="27" viewBox="0 0 24 24"
+              style="fill: #ffffff;transform: msFilter;">
+              <path
+                d="M14.82 4.26a10.14 10.14 0 0 0-.53 1.1 14.66 14.66 0 0 0-4.58 0 10.14 10.14 0 0 0-.53-1.1 16 16 0 0 0-4.13 1.3 17.33 17.33 
+              0 0 0-3 11.59 16.6 16.6 0 0 0 5.07 2.59A12.89 12.89 0 0 0 8.23 18a9.65 9.65 0 0 1-1.71-.83 3.39 3.39 0 0 0 .42-.33 11.66 11.66 0 
+              0 0 10.12 0q.21.18.42.33a10.84 10.84 0 0 1-1.71.84 12.41 12.41 0 0 0 1.08 1.78 16.44 16.44 0 0 0 5.06-2.59 17.22 17.22 0 0 0-3-11.59 16.09 16.09 0 0 0-4.09-1.35zM8.68 14.81a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.93 1.93 0 0 1 1.8 2 1.93 1.93 0 0 1-1.8 2zm6.64 0a1.94 1.94 0 0 1-1.8-2 1.93 1.93 0 0 1 1.8-2 1.92 1.92 0 0 1 1.8 2 1.92 1.92 0 0 1-1.8 2z">
+              </path>
+            </svg>
+            <span class="text-putih ml-2 hover:underline">Join Discord</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- hero end -->
+
+  <!-- services -->
+  <section class="services">
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up">
+        <div class="block md:flex items-start justify-between">
+          <h2 class="text-putih font-poppins text-3xl lg:text-5xl font-bold mb-2 w-full md:w-1/2 lg:w-3/5">
+            Berikut Keahlian <span class="text-unggu">Saya</span>
+          </h2>
+          <div class="mt-6 md:mt-0 w-full md:w-[360px]">
+            <div class="flex items-center">
+              <hr class="w-14 border-t-2 border-unggu mr-4">
+              <h6 class="text-putih font-inter font-semibold text-xl mr-4">Services.</h6>
+            </div>
+            <p class="mt-2 text-gray-400 font-inter font-normal">"Menggabungkan Kreativitas dengan Kode: Inovasi Desain
+              dan <span class="font-semibold text-putih">Teknologi Blockchain.</span>"</p>
+          </div>
+        </div>
+      </div>
+      <!-- card content -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-20">
+        <!-- card 1 -->
+        <div data-aos="fade-up">
+          <div
+            class="card service bg-metal rounded-2xl px-6 py-16 cursor-pointer hover:bg-unggu hover:ring-4 hover:ring-putih"
+            style="position: relative;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" viewBox="0 0 24 24"
+              style="fill: #ffffff;transform: msFilter;">
+              <path
+                d="M11.219 3.375 8 7.399 4.781 3.375A1.002 1.002 0 0 0 3 4v15c0 1.103.897 2 2 2h14c1.103 0 2-.897 2-2V4a1.002 1.002 0 0 0-1.781-.625L16 7.399l-3.219-4.024c-.381-.474-1.181-.474-1.562 0zM5 19v-2h14.001v2H5zm10.219-9.375c.381.475 1.182.475 1.563 0L19 6.851 19.001 15H5V6.851l2.219 2.774c.381.475 1.182.475 1.563 0L12 5.601l3.219 4.024z">
+              </path>
+            </svg>
+            <h5 class="text-putih font-poppins font-bold text-2xl mt-6 gap-5 mb-6 ">
+              Frontend Dev
+            </h5>
+            <p class="text-gray-400 font-inter text-base mb-4 leading-5 mt-5">"Frontend developer merancang dan <span
+                class="font-medium text-putih">mengembangkan antarmuka pengguna
+                untuk situs web atau aplikasi,</span> fokus pada desain, interaksi, dan fungsionalitas pengguna."
+            </p>
+          </div>
+        </div>
+        <!-- card 1 end -->
+
+        <!-- card 2 -->
+        <div data-aos="fade-up">
+          <div
+            class="card service bg-metal rounded-2xl px-6 py-16 cursor-pointer hover:bg-unggu hover:ring-4 hover:ring-putih"
+            style="position: relative;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50" height="47" viewBox="0 0 24 24" style="fill:#ffffff ;transform: 
+              msFilter;">
+              <path d="M6 3h2v2H6zm2 16h3v2H8zm8-16h2v2h-2zm-3 16h3v2h-3zm7-8V9h-2V7h-2V5h-2v2h-4V5H8v2H6v2H4v2H2v8h2v-4h2v4h2v-3h8v3h2v-4h2v4h2v-8zm-10 
+              1H8V9h2zm6 0h-2V9h2z"></path>
+            </svg>
+            <h5 class="text-putih font-poppins font-bold text-2xl mt-6 gap-5 mb-6 ">
+              UI/UX Designer
+            </h5>
+            <p class="text-gray-400 font-inter text-base mb-4 leading-5 mt-5">
+              "<span class="font-medium text-putih">UI (User Interface) dan UX (User Experience)</span> adalah dua aspek
+              yang sangat penting dalam
+              pengembangan produk digital, seperti aplikasi dan situs web.""
+            </p>
+          </div>
+        </div>
+        <!-- card 2 end -->
+
+        <!-- card 3 -->
+        <div data-aos="fade-up">
+          <div
+            class="card service bg-metal rounded-2xl px-6 py-16 cursor-pointer hover:bg-unggu hover:ring-4 hover:ring-putih"
+            style="position: relative;">
+            <svg xmlns="http://www.w3.org/2000/svg" width="47" height="50" viewBox="0 0 24 24"
+              style="fill: #ffffff;transform: msFilter;">
+              <path
+                d="M3.299 17.596c.432 1.332 1.745 2.182 3.146 2.182H6.5A2.78 2.78 0 0 0 9.223 22c.457 0 .884-.115 1.262-.313a.992.992 0 0 0 .515-.882V3.027a.997.997 0 0 0-.785-.983 2.324 2.324 0 0 0-1.479.201c-.744.356-1.18 1.151-1.18 1.978v.055a2.778 2.778 0 0 0-2.744 4.433A3.327 3.327 0 0 0 2 12c0 1.178.611 2.211 1.533 2.812-.43.771-.571 1.746-.234 2.784zm15.889-8.885a2.778 2.778 0 0 0-2.744-4.433v-.055c0-.826-.437-1.622-1.181-1.978a2.32 2.32 0 0 0-1.478-.201.998.998 0 0 0-.785.983v17.777c0 .365.192.712.516.882.378.199.804.314 1.261.314a2.78 2.78 0 0 0 2.723-2.223h.056c1.4 0 2.714-.85 3.146-2.182.337-1.038.196-2.013-.234-2.784A3.35 3.35 0 0 0 22 12a3.327 3.327 0 0 0-2.812-3.289z">
+              </path>
+            </svg>
+            <h5 class="text-putih font-poppins font-bold text-2xl mt-6 gap-5 mb-6">
+              Chat AI
+            </h5>
+            <p class="text-gray-400 font-inter text-base mb-4 leading-5 mt-5">"Chat AI adalah sebuah sistem kecerdasan
+              buatan yang <span class="text-putih font-medium">dirancang untuk berinteraksi dengan manusia melalui
+                percakapan teks</span> yang di lengkapi dengan algoritma.
+            </p>
+          </div>
+        </div>
+        <!-- card 3 end -->
+      </div>
+      <!-- card content end -->
+    </div>
+  </section>
+  <!-- services end -->
+
+  <!-- work -->
+  <section class="work mt-28 py-24">
+    <div class="container max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div data-aos="fade-up">
+        <div class="block md:flex items-center justify-between">
+          <div>
+            <div class="flex items-center">
+              <hr class="w-14 border-t-2 border-unggu mr-4">
+              <h6 class="text-putih font-inter font-semibold text-xl mr-4">Recent Work</h6>
+            </div>
+            <h2 class="text-white text-3xl font-poppins lg:text-5xl font-bold mb-2 md:w-3/4 mt-4">Berikut Project <span
+                class="font-bold text-unggu">UI/UX Desain</span></h2>
+          </div>
+          <div class="mt-6 md-mt-0 gap-6">
+            <a href="https://www.instagram.com/fiksdev/"
+              class="flex item center text-gray-400 font-inter font-semibold text-lg hover:gap-1">
+              <span class="text-putih ml-2 hover:underline">Lihat project lainnya</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                style="fill: #ffffff;transform: msFilter ;">
+                <path d="m11.293 17.293 1.414 1.414L19.414 12l-6.707-6.707-1.414 1.414L15.586 11H6v2h9.586z"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- card baris 1 -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        <!-- card 1 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6 py-16" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 1.png" alt="mockup 1">
+          </div>
+        </div>
+        <!-- card 1 end -->
+
+        <!-- card 2 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6 py-16" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 2.png" alt="mockup 2">
+          </div>
+        </div>
+        <!-- card 2 end -->
+
+        <!-- card 3 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6 py-16" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 3.png" alt="mockup 3">
+          </div>
+        </div>
+        <!-- card 3 end -->
+
+        <!-- card 4 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6 py-16" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 4.png" alt="mockup 4">
+          </div>
+        </div>
+        <!-- card 4 end -->
+
+        <!-- card 5 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 5.png" alt="mockup 5">
+          </div>
+        </div>
+        <!-- card 5 end -->
+
+        <!-- card 6 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 6.png" alt="mockup 6">
+          </div>
+        </div>
+        <!-- card 6 end -->
+
+        <!-- card 7 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 7.png" alt="mockup 7">
+          </div>
+        </div>
+        <!-- card 7 end -->
+
+        <!-- card 8 -->
+        <div data-aos="fade-up">
+          <div class="card service bg-none rounded-2xl px-6" style="position: relative;">
+            <img src="/image/prototype/iPhone 14 Pro Space Black Mockup 8.png" alt="mockup 8">
+          </div>
+        </div>
+        <!-- card 8 end -->
+      </div>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- work end -->
+
+  <!-- testimoni -->
+  <div data-aos="fade-up">
+    <section class="testimoni py-28">
+      <div class="container max-w-xl mx-auto texr-center px-4 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-center">
+          <hr class="w-14 border-t-2 border-unggu mr-4">
+          <h6 class="text-putih font-inter font-semibold text-xl mr-4">Testimoni Pelanggan</h6>
+        </div>
+        <h2 class="text-putih font-poppins text-center text-3xl lg:text-5xl font-bold mb-2 mt-4 mx-auto">Komentar <span
+            class="text-unggu">Pelanggan</span></h2>
+        <div class="owl-carousel">
+          <!-- items 1 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Desain UI/UX-nya sangat intuitif dan menarik! Navigasinya mudah
+              dipahami dan membuat pengalaman pengguna menjadi sangat menyenangkan. Kerja yang luar biasa!"</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto2(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Rizky Saputra</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">CoFounder <span class="font-bold">Neural.AI</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 2 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"UI/UX-nya benar-benar user-friendly, navigasinya lancar banget! Semua
+              elemen tampilan ditempatkan dengan baik dan fungsionalitasnya sangat memudahkan pengguna."</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto10(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">David Pangestu</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">CEO <span class="font-bold">Kata Baca</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 3 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Desainnya elegan dan fungsional, sangat menyenangkan untuk digunakan.
+              Setiap detail tampak dipikirkan dengan matang, membuat pengalaman pengguna menjadi sangat lancar."</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto3(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Ario Nugroho</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Manajer Proyek <span class="font-bold">PT.Prima Jaya
+                    Sentosa</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 4 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Pengalaman pengguna yang sangat mulus, desainnya keren banget! Warna,
+              tipografi, dan tata letak semuanya bekerja sama dengan harmonis untuk menciptakan tampilan yang
+              profesional dan menarik."</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto4(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Joko Santoso</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Analis Data <span class="font-bold">PT.Visioner Sukses
+                    Bersama</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 5 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"UI/UX-nya membuat segalanya terasa mudah dan efisien. Setiap fitur
+              terasa intuitif dan responsif, memberikan kesan bahwa banyak perhatian telah diberikan pada detail-detail
+              kecil. Luar biasa!"</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto5(cewek).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Dinda Lestari</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Pengembang Perangkat Lunak <span
+                    class="font-bold">PT.Prestasi Abadi</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 6 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Desain UI/UX yang sangat inovatif dan menyegarkan! Penggunaan ruang,
+              ikon, dan interaksi pengguna sangat efektif, membuat aplikasi ini sangat user-centric."</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto7(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Budi Wibowo</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Spesialis Pemasaran Digital <span
+                    class="font-bold">PT.Dinamika Solusi Utama</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 7 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Antarmuka pengguna sangat bersih dan modern. UX-nya terasa sangat
+              alami, saya langsung bisa menggunakan aplikasi tanpa kebingungan. Desain yang hebat!"</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto6(cewek).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Siti Rahmawati</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Manajer Sumber Daya Manusia <span
+                  class="font-bold">PT.Harmoni Teknologi</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 8 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"UI/UX ini benar-benar menunjukkan pemahaman mendalam tentang
+              kebutuhan pengguna. Setiap elemen tampaknya dirancang dengan pemikiran yang mendalam untuk kenyamanan dan
+              kemudahan penggunaan."</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto8(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Rizky Pratama</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Penulis Konten <span class="font-bold">PT.Inovasi
+                    Digital Mandiri</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 9 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Desainnya sangat responsif dan adaptif, membuat pengalaman pengguna
+              tetap optimal di berbagai perangkat. Sangat terkesan dengan perhatian terhadap detail dan kualitas
+              keseluruhan!"</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto9(cowok).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Andi Wirawan</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Analis Keuangan <span class="font-bold">PT.Cipta
+                    Kreasi Global</span></p>
+              </div>
+            </div>
+          </div>
+          <!-- items 10 -->
+          <div class="item">
+            <p class="text-gray mt-20 text-putih">"Tampilan visual yang menarik dipadukan dengan UX yang mulus membuat
+              aplikasi ini sangat menyenangkan untuk digunakan. Sangat mengapresiasi upaya yang telah dilakukan dalam
+              desain ini!"</p>
+            <div class="flex items-center justify-center gap-5 mt-9">
+              <img src="/image/foto profil (user)/foto11(cewek).jpg" alt="profil" class="rounded-full hover:scale-125">
+              <div>
+                <h6 class="text-putih font-inter font-semibold text-xl">Nia Kusuma</h6>
+                <p class="text-gray text-sm ml-[5px] text-putih">Insinyur Jaringan <span class="font-bold">PT.Sinergi
+                    Nusantara</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="owl-dots dots- container"></div>
+    </section>
+  </div>
+  <!-- testimoni end -->
+
+  <!-- benefit pelanggan -->
+  
+  <!-- benefit end -->
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- typed.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js"></script>
+  <!-- Owl Carowsel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <!-- js flowbite -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <!-- js native -->
+  <script src="script.js"></script>
+  <!-- js aos -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</html>
+</body>

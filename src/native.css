@@ -1,0 +1,34 @@
+/* owl carosel */
+.owl-nav span{
+    display: none;
+}
+
+.owl-nav {
+    margin-top: 20px;
+}
+
+.owl-carousel .owl-item img{
+    width: 50px !important;
+}
+
+.owl-carousel .owl-dots{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+.owl-carousel .owl-dot{
+    background-color: #1C1C2C !important;
+    width: 8px;
+    height: 8px;
+    margin: 2px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.owl-carousel .owl-dot.active {
+    background-color: #4637C8 !important;
+}
