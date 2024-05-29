@@ -60,5 +60,5 @@ $(document).ready(function () {
   var owl = $('.owl-carousel');
   var intervalID = window.setInterval(function() {
     owl.trigger('next.owl.carousel');
-  }, 3500); // function perulangan (dalam milidetik)
+  }, 3200); // function perulangan (dalam milidetik)
 });

@@ -1,3 +1,8 @@
+/* custom cursor */
+body{
+    cursor: url('/image/forbid.png'), auto;
+}
+
 /* owl carosel */
 .owl-nav span{
     display: none;
@@ -32,3 +37,4 @@
 .owl-carousel .owl-dot.active {
     background-color: #4637C8 !important;
 }
+
