@@ -58,7 +58,7 @@ $(document).ready(function () {
   });
   // Automate carousel navigation
   var owl = $('.owl-carousel');
-  var intervalID = window.setInterval(function() {
+  var intervalID = window.setInterval(function () {
     owl.trigger('next.owl.carousel');
   }, 3200); // function perulangan (dalam milidetik)
 });
