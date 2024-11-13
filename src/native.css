@@ -37,3 +37,22 @@ body{
 .owl-carousel .owl-dot.active {
     background-color: #4637C8 !important;
 }
+
+.logo {
+    overflow: hidden;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: 140s slide infinite linear;
+}
