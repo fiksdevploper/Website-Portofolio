@@ -40,19 +40,19 @@ body{
 
 .logo {
     overflow: hidden;
+    white-space: nowrap;
+}
+
+.logo-slide {
+    display: inline-block;
+    animation: slide 80s linear infinite;
 }
 
 @keyframes slide {
     from {
         transform: translateX(0);
     }
-
     to {
-        transform: translateX(-100%);
+        transform: translateX(-50%);
     }
-}
-
-.logo-slide {
-    display: inline-block;
-    animation: 140s slide infinite linear;
 }
