@@ -32,7 +32,7 @@ window.addEventListener("resize", function () {
 
 // hero runing text
 var typed = new Typed("#typed", {
-  strings: ["Join my comunity", "Crate Portofolio", "Build personal branding"],
+  strings: ["Join my comunity", "Create Portofolio", "Build personal branding"],
   typeSpeed: 90,
   backSpeed: 90,
   loop: true,
